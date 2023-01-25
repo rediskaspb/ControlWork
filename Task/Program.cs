@@ -7,13 +7,11 @@ string[] array = {"12hj", "123456", "12v", "2U", "Frd458j", "8="};
 var result = new string[array.Length];
 void Array3symb(string[] array, string[] result)
 {
-    int count = 0;
     for (int i = 0; i < array.Length; i++)
     {
     if(array[i].Length <= 3)
         {
-        result[count] = array[i];
-        count++;
+        result[i] = array[i];
         }
     }
 }
